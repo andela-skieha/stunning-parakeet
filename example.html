@@ -8,6 +8,8 @@
   <body ng-app="myApp">
 
     <div ng-controller="HelloController">
+      <p>Enter your name: <input type="text" ng-model="name"></p>
+      <p>Hello <span ng-bind="name"></span>!</p>
       <h2>Welcome {{helloTo.title}}</h2>
     </div>
 
